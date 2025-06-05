@@ -5,6 +5,10 @@ public class Customer {
     String name;
     String customerId;
     ArrayList<Account> accounts = new ArrayList<>();
+    public Customer(String name){
+        this.name = name;
+        this.customerId = customerId;
+    }
 
     public void addAccount(Account account){
         accounts.add(account);

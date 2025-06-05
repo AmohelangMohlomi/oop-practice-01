@@ -1,7 +1,17 @@
 public abstract class Account {
-    protected String accountNumber;
-    protected int balance; // in cents
 
+    protected String accountNumber;
+    protected int balance =0; // in cents
+
+
+    public Account(){
+
+    }
+    public Account(String customerId, Account type){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+
+    }
     abstract void displayInfo();
 
     public void deposit(int amountInCents){

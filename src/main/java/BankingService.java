@@ -2,18 +2,30 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class BankingService {
-    Customer customer;
+
     Account account;
     ArrayList<Customer> customers= new ArrayList<>();
 
+
     public void createCustomer(String name){
+        Customer customer = new Customer(name);
         Random random = new Random();
         customer.setCustomerId(name+random.nextInt(100));
     }
 
-    public void createAccount(String customerId, Account type){
+    public void createAccount(String customerId, String type){
         Random random = new Random();
-        account.setAccountNumber(customerId + random.nextInt(3) + type);
+        if(type =="Checking"){
+            Account checkAcc = new CheckingAccount();
+            account.setAccountNumber(customerId + random.nextInt(3) + type);
+//            service.createAccount(customer.getCustomerId(), checkAcc);
+        } else if (type == "Savings") {
+            Account savingsAcc = new SavingsAccount();
+            account.setAccountNumber(customerId + random.nextInt(3) + type);
+//            service.createAccount(customer.getCustomerId(),savingsAcc);
+        }
+
+
     }
 
     public void deposit(String customerId, Account acccountNumber){
