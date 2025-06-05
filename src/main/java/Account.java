@@ -12,6 +12,10 @@ public abstract class Account {
         balance -= amountInCents;
     }
 
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
     public String getAccountNumber() {
         return this.accountNumber;
     }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class BankingService {
     Customer customer;
@@ -6,11 +7,13 @@ public class BankingService {
     ArrayList<Customer> customers= new ArrayList<>();
 
     public void createCustomer(String name){
-
+        Random random = new Random();
+        customer.setCustomerId(name+random.nextInt(100));
     }
 
     public void createAccount(String customerId, Account type){
-
+        Random random = new Random();
+        account.setAccountNumber(customerId + random.nextInt(3) + type);
     }
 
     public void deposit(String customerId, Account acccountNumber){

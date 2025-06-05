@@ -14,8 +14,13 @@ public class Customer {
         return this.accounts;
     }
 
+
     public String getName(){
         return this.name;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getCustomerId() {
