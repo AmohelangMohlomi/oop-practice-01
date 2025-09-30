@@ -11,10 +11,12 @@ public class Customer {
         this.name=name;
         this.customerId=customerId;
     }
+    public Customer(String name ){
+        this.name=name;
+    }
 
-    public ArrayList addAccount(Account account){
+    public void addAccount(Account account){
         accounts.add(account);
-        return accounts;
     }
 
     public String getName() {

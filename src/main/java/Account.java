@@ -17,7 +17,6 @@ public abstract class Account {
         if( balance >= amountInCents){
             balance -= amountInCents;
         }
-
     }
 
     public String getAccountNumber() {
