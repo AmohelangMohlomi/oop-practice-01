@@ -3,6 +3,10 @@ public abstract class Account {
 
     protected int balance;
 
+    public Account(String accountNumber){
+        this.accountNumber=accountNumber;
+    }
+
     abstract  void displayInfo();
 
     public void deposit(int amountInCents){
