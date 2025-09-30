@@ -1,8 +1,6 @@
 public abstract class Account {
     protected String accountNumber;
 
-
-
     protected int balance;
 
     abstract  void displayInfo();
