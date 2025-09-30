@@ -10,11 +10,11 @@ public abstract class Account {
     abstract  void displayInfo();
 
     public void deposit(int amountInCents){
-
+        balance += amountInCents;
     }
 
     public void withdraw(int amountInCents){
-
+        balance -= amountInCents;
     }
 
     public String getAccountNumber() {

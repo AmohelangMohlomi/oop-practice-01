@@ -12,8 +12,9 @@ public class Customer {
         this.customerId=customerId;
     }
 
-    public void addAccount(Account account){
-
+    public ArrayList addAccount(Account account){
+        accounts.add(account);
+        return accounts;
     }
 
     public String getName() {
