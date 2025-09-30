@@ -14,7 +14,10 @@ public abstract class Account {
     }
 
     public void withdraw(int amountInCents){
-        balance -= amountInCents;
+        if( balance >= amountInCents){
+            balance -= amountInCents;
+        }
+
     }
 
     public String getAccountNumber() {
