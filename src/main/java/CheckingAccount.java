@@ -1,2 +1,8 @@
-public class CheckingAccount {
+public class CheckingAccount extends Account {
+
+
+    @Override
+    void displayInfo() {
+
+    }
 }
