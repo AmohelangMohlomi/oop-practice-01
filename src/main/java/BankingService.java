@@ -1,8 +1,9 @@
 public class BankingService {
 
     public Customer createCustomer(String name){
-        return new Customer("","");
-
+        int customerNo = 0;
+        Customer customer = new Customer(name,"CUST"+String.valueOf(customerNo + 1));
+        return customer;
     }
 
     public Account createAccount(String customerId, String type){
