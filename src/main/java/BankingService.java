@@ -1,11 +1,12 @@
 public class BankingService {
 
-    public void createCustomer(String name){
+    public Customer createCustomer(String name){
+        return new Customer("","");
 
     }
 
-    public void createAccount(String customerId, String type){
-
+    public Account createAccount(String customerId, String type){
+        return new CheckingAccount("");
     }
 
     public void deposit(String customerId, String accountNumber, int amountInCents){

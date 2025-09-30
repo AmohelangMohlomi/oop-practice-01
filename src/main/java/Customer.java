@@ -7,10 +7,14 @@ public class Customer {
     public String customerId;
     public ArrayList<Account> accounts;
 
+    public Customer(String name, String customerId ){
+        this.name=name;
+        this.customerId=customerId;
+    }
+
     public void addAccount(Account account){
 
     }
-
 
     public String getName() {
         return name;
