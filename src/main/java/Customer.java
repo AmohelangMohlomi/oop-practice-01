@@ -10,6 +10,7 @@ public class Customer {
     public Customer(String name, String customerId ){
         this.name=name;
         this.customerId=customerId;
+        this.accounts= new ArrayList<>();
     }
     public Customer(String name ){
         this.name=name;

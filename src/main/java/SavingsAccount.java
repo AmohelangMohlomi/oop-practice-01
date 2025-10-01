@@ -7,6 +7,6 @@ public class SavingsAccount extends Account{
 
     @Override
     void displayInfo() {
-
+        System.out.println("Savings Account: " + accountNumber + ", Balance: " + balance);
     }
 }

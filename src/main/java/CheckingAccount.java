@@ -7,6 +7,7 @@ public class CheckingAccount extends Account {
 
     @Override
     void displayInfo() {
+        System.out.println("Checking Account: " + accountNumber + ", Balance: " + balance);
 
     }
 }
